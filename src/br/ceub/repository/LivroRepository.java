@@ -1,4 +1,8 @@
+package br.ceub.repository;
+
 import java.util.List;
+
+import br.ceub.model.Livro;
 
 public class LivroRepository {
 

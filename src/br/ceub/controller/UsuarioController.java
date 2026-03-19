@@ -1,4 +1,9 @@
+package br.ceub.controller;
+
 import java.util.List;
+
+import br.ceub.model.Usuario;
+import br.ceub.service.UsuarioService;
 
 public class UsuarioController {
     private UsuarioService usuarioService;

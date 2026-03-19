@@ -1,3 +1,5 @@
+package br.ceub.model;
+
 import java.time.LocalDate;
 
 public class Emprestimo {

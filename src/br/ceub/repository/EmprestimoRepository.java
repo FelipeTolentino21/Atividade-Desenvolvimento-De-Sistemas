@@ -1,4 +1,8 @@
+package br.ceub.repository;
+
 import java.util.List;
+
+import br.ceub.model.Emprestimo;
 
 public class EmprestimoRepository {
 

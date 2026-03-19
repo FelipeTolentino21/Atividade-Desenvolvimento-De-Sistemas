@@ -1,3 +1,5 @@
+package br.ceub.model;
+
 public class Livro {
     private int id;
     private String nome;
@@ -44,7 +46,7 @@ public class Livro {
         return edicao;
     }
 
-    public void setEdicao(double edicao) {
+    public void setEdicao(int edicao) {
         this.edicao = edicao;
     }
 
