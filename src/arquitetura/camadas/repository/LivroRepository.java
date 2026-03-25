@@ -1,8 +1,8 @@
-package br.ceub.repository;
+package br.camadas.repository;
 
 import java.util.List;
 
-import br.ceub.model.Livro;
+import br.camadas.model.Livro;
 
 public class LivroRepository {
 

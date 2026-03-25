@@ -1,8 +1,8 @@
-package br.ceub.repository;
+package br.camadas.repository;
 
 import java.util.List;
 
-import br.ceub.model.Emprestimo;
+import br.camadas.model.Emprestimo;
 
 public class EmprestimoRepository {
 

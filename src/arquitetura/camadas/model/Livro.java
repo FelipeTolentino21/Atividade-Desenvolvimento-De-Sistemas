@@ -1,4 +1,4 @@
-package br.ceub.model;
+package br.camadas.model;
 
 public class Livro {
     private int id;

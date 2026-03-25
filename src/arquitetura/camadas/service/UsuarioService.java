@@ -1,22 +1,23 @@
-package br.ceub.controller;
+package br.camadas.service;
 
 import java.util.List;
 
-import br.ceub.model.Usuario;
-import br.ceub.service.UsuarioService;
+import br.camadas.model.Usuario;
+import br.camadas.repository.UsuarioRepository;
 
-public class UsuarioController {
-    private UsuarioService usuarioService;
+public class UsuarioService {
+    private UsuarioRepository usuarioRepository;
 
-    public UsuarioController() {
-        this.usuarioService = new UsuarioService();
+    public UsuarioService() {
+        this.usuarioRepository = new UsuarioRepository();
     }
 
-    public UsuarioController(UsuarioService usuarioService) {
-        this.usuarioService = usuarioService;
+    public UsuarioService(UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
     }
 
-    public void cadastrar(Usuario usuario) {
+    public Usuario cadastrar(Usuario usuario) {
+        return null;
     }
 
     public Usuario buscarPorId(int id) {
@@ -44,5 +45,4 @@ public class UsuarioController {
 
     public void remover(int id) {
     }
-    
 }

@@ -1,9 +1,9 @@
-package br.ceub.service;
+package br.camadas.service;
 
 import java.util.List;
 
-import br.ceub.model.Livro;
-import br.ceub.repository.LivroRepository;
+import br.camadas.model.Livro;
+import br.camadas.repository.LivroRepository;
 
 public class LivroService {
     private LivroRepository livroRepository;

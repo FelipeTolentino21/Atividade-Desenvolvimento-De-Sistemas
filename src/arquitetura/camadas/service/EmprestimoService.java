@@ -1,11 +1,11 @@
-package br.ceub.service;
+package br.camadas.service;
 
 import java.util.List;
 
-import br.ceub.model.Emprestimo;
-import br.ceub.repository.EmprestimoRepository;
-import br.ceub.repository.LivroRepository;
-import br.ceub.repository.UsuarioRepository;
+import br.camadas.model.Emprestimo;
+import br.camadas.repository.EmprestimoRepository;
+import br.camadas.repository.LivroRepository;
+import br.camadas.repository.UsuarioRepository;
 
 public class EmprestimoService {
     private EmprestimoRepository emprestimoRepository;
@@ -19,9 +19,9 @@ public class EmprestimoService {
         this.livroRepository = new LivroRepository();
     }
 
-    public EmprestimoService(EmprestimoRepository emprestimoRepository, 
-                            UsuarioRepository usuarioRepository, 
-                            LivroRepository livroRepository) {
+    public EmprestimoService(EmprestimoRepository emprestimoRepository,
+            UsuarioRepository usuarioRepository,
+            LivroRepository livroRepository) {
         this.emprestimoRepository = emprestimoRepository;
         this.usuarioRepository = usuarioRepository;
         this.livroRepository = livroRepository;

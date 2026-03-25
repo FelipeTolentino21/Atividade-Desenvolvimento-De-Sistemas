@@ -1,9 +1,9 @@
-package br.ceub.controller;
+package br.camadas.controller;
 
 import java.util.List;
 
-import br.ceub.model.Livro;
-import br.ceub.service.LivroService;
+import br.camadas.model.Livro;
+import br.camadas.service.LivroService;
 
 public class LivroController {
     private LivroService livroService;
@@ -15,7 +15,7 @@ public class LivroController {
     public LivroController(LivroService livroService) {
         this.livroService = livroService;
     }
-    
+
     public void cadastrar(Livro livro) {
     }
 

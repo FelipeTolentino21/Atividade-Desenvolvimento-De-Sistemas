@@ -1,4 +1,4 @@
-package br.ceub.model;
+package br.camadas.model;
 
 import java.time.LocalDate;
 
