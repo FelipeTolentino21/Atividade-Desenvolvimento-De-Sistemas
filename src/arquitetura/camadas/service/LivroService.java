@@ -25,7 +25,7 @@ public class LivroService {
     }
 
     public List<Livro> buscarPorNome(String nome) {
-        return null;
+        return this.livroRepository.buscarPorId(id);
     }
 
     public List<Livro> listarTodos() {
