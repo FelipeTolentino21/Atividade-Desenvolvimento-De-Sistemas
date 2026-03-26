@@ -1,4 +1,4 @@
-package br.camadas.model;
+package arquitetura.camadas.model;
 
 public class Usuario {
     private int id;

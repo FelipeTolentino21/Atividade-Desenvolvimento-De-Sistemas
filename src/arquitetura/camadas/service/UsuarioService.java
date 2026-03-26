@@ -1,9 +1,9 @@
-package br.camadas.service;
+package arquitetura.camadas.service;
 
 import java.util.List;
 
-import br.camadas.model.Usuario;
-import br.camadas.repository.UsuarioRepository;
+import arquitetura.camadas.model.Usuario;
+import arquitetura.camadas.repository.UsuarioRepository;
 
 public class UsuarioService {
     private UsuarioRepository usuarioRepository;

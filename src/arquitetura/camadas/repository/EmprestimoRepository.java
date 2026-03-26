@@ -1,8 +1,8 @@
-package br.camadas.repository;
+package arquitetura.camadas.repository;
 
 import java.util.List;
 
-import br.camadas.model.Emprestimo;
+import arquitetura.camadas.model.Emprestimo;
 
 public class EmprestimoRepository {
 

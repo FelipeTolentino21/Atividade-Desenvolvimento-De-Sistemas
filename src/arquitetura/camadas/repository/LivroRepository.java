@@ -1,8 +1,8 @@
-package br.camadas.repository;
+package arquitetura.camadas.repository;
 
 import java.util.List;
 
-import br.camadas.model.Livro;
+import arquitetura.camadas.model.Livro;
 
 public class LivroRepository {
 

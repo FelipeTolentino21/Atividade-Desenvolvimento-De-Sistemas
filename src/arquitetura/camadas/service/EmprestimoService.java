@@ -1,11 +1,11 @@
-package br.camadas.service;
+package arquitetura.camadas.service;
 
 import java.util.List;
 
-import br.camadas.model.Emprestimo;
-import br.camadas.repository.EmprestimoRepository;
-import br.camadas.repository.LivroRepository;
-import br.camadas.repository.UsuarioRepository;
+import arquitetura.camadas.model.Emprestimo;
+import arquitetura.camadas.repository.EmprestimoRepository;
+import arquitetura.camadas.repository.LivroRepository;
+import arquitetura.camadas.repository.UsuarioRepository;
 
 public class EmprestimoService {
     private EmprestimoRepository emprestimoRepository;

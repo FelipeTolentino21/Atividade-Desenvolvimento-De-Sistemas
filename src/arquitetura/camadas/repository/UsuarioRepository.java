@@ -1,9 +1,9 @@
-package br.camadas.repository;
+package arquitetura.camadas.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.camadas.model.Usuario;
+import arquitetura.camadas.model.Usuario;
 
 public class UsuarioRepository {
     ArrayList<Usuario> listaUsuario = new ArrayList<>();

@@ -1,4 +1,4 @@
-package br.camadas.model;
+package arquitetura.camadas.model;
 
 import java.time.LocalDate;
 

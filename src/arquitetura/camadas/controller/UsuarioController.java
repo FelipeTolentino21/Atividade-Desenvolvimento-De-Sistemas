@@ -1,9 +1,9 @@
-package br.camadas.controller;
+package arquitetura.camadas.controller;
 
 import java.util.List;
 
-import br.camadas.model.Usuario;
-import br.camadas.service.UsuarioService;
+import arquitetura.camadas.model.Usuario;
+import arquitetura.camadas.service.UsuarioService;
 
 public class UsuarioController {
     private UsuarioService usuarioService;

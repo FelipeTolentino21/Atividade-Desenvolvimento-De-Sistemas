@@ -1,4 +1,4 @@
-package br.camadas.model;
+package arquitetura.camadas.model;
 
 public class Livro {
     private int id;
@@ -16,10 +16,6 @@ public class Livro {
         this.autor = autor;
         this.edicao = edicao;
         this.quantidade = quantidade;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public void setId(int id) {

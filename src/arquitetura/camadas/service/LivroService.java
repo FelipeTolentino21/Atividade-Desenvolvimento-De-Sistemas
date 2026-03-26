@@ -1,9 +1,9 @@
-package br.camadas.service;
+package arquitetura.camadas.service;
 
 import java.util.List;
 
-import br.camadas.model.Livro;
-import br.camadas.repository.LivroRepository;
+import arquitetura.camadas.model.Livro;
+import arquitetura.camadas.repository.LivroRepository;
 
 public class LivroService {
     private LivroRepository livroRepository;

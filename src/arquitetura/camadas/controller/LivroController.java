@@ -1,9 +1,9 @@
-package br.camadas.controller;
+package arquitetura.camadas.controller;
 
 import java.util.List;
 
-import br.camadas.model.Livro;
-import br.camadas.service.LivroService;
+import arquitetura.camadas.model.Livro;
+import arquitetura.camadas.service.LivroService;
 
 public class LivroController {
     private LivroService livroService;
