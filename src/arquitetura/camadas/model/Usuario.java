@@ -1,14 +1,12 @@
 package arquitetura.camadas.model;
 
 public class Usuario {
+    // Atributos
     private int id;
     private String nome;
     private String email;
     private String cpf;
     private String telefone;
-
-    public Usuario() {
-    }
 
     public Usuario(int id, String nome, String email, String cpf, String telefone) {
         this.id = id;

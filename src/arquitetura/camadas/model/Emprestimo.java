@@ -11,9 +11,6 @@ public class Emprestimo {
     private LocalDate dataDevoluçaoReal;
     private boolean ativo;
 
-    public Emprestimo() {
-    }
-
     public Emprestimo(int id, int usuarioId, int livroId, LocalDate dataEmprestimo, LocalDate dataDevolucaoPrevista) {
         this.id = id;
         this.usuarioId = usuarioId;
