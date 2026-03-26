@@ -8,22 +8,22 @@ import arquitetura.camadas.model.Livro;
 public class LivroRepository {
     static int contadorId = 1;
 
-    static HashMap<Integer, Livro> banco = new HashMap<>();
+    static HashMap<Integer, Livro> bancoLivros = new HashMap<>();
 
     public void salvar(Livro livro) {
-        banco.put(contadorId, livro);
+        bancoLivros.put(contadorId, livro);
         contadorId++;
     }
 
     public Livro buscarPorId(int id) {
-        return banco.get(id);
+        return bancoLivros.get(id);
     }
 
     public ArrayList<Livro> buscarPorNome(String nome) {
         ArrayList<Livro> resultados = new ArrayList<>();
         String busca = nome.toLowerCase();
 
-        for (HashMap.Entry<Integer, Livro> entrada : banco.entrySet()) {
+        for (HashMap.Entry<Integer, Livro> entrada : bancoLivros.entrySet()) {
             Livro livro = entrada.getValue();
 
             if (livro.getNome().toLowerCase().contains(busca)) {
@@ -34,7 +34,7 @@ public class LivroRepository {
     }
 
     public void listarTodos() {
-        for (HashMap.Entry<Integer, Livro> entrada : banco.entrySet()) {
+        for (HashMap.Entry<Integer, Livro> entrada : bancoLivros.entrySet()) {
             Integer chave = entrada.getKey();
             Livro livro = entrada.getValue();
 
@@ -42,17 +42,20 @@ public class LivroRepository {
         }
     }
 
+    // Mudar como esse método funciona
+    // Ou lembrar que quando for usar esse método chamar algum outro que crie outro
+    // livro para substituir esse.
     public boolean atualizar(int id, Livro livro) {
-        if (banco.containsKey(id)) {
-            banco.replace(id, livro);
+        if (bancoLivros.containsKey(id)) {
+            bancoLivros.replace(id, livro);
             return true;
         }
         return false;
     }
 
     public boolean deletar(int id) {
-        if (banco.containsKey(id)) {
-            banco.remove(id);
+        if (bancoLivros.containsKey(id)) {
+            bancoLivros.remove(id);
             return true;
         }
         return false;
