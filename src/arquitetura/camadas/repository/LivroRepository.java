@@ -33,6 +33,8 @@ public class LivroRepository {
         return resultados;
     }
 
+    // Viabilizar alteração para retornar um ArrayList ao invés de void (como em
+    // quando retorna a lista resultados)
     public void listarTodos() {
         for (HashMap.Entry<Integer, Livro> entrada : bancoLivros.entrySet()) {
             Integer chave = entrada.getKey();
