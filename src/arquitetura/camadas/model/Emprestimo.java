@@ -8,11 +8,8 @@ public class Emprestimo {
     private int livroId;
     private LocalDate dataEmprestimo;
     private LocalDate dataDevolucaoPrevista;
-    private LocalDate dataDevoluçaoReal;
+    private LocalDate dataDevolucaoReal;
     private boolean ativo;
-
-    public Emprestimo() {
-    }
 
     public Emprestimo(int id, int usuarioId, int livroId, LocalDate dataEmprestimo, LocalDate dataDevolucaoPrevista) {
         this.id = id;
@@ -63,12 +60,12 @@ public class Emprestimo {
         this.dataDevolucaoPrevista = dataDevolucaoPrevista;
     }
 
-    public LocalDate getDataDevoluçaoReal() {
-        return dataDevoluçaoReal;
+    public LocalDate getDataDevolucaoReal() {
+        return dataDevolucaoReal;
     }
 
-    public void setDataDevoluçaoReal(LocalDate dataDevoluçaoReal) {
-        this.dataDevoluçaoReal = dataDevoluçaoReal;
+    public void setDataDevolucaoReal(LocalDate dataDevolucaoReal) {
+        this.dataDevolucaoReal = dataDevolucaoReal;
     }
 
     public boolean isAtivo() {
@@ -87,7 +84,7 @@ public class Emprestimo {
                 ", livroId=" + livroId +
                 ", dataEmprestimo=" + dataEmprestimo +
                 ", dataDevolucaoPrevista=" + dataDevolucaoPrevista +
-                ", dataDevoluçaoReal=" + dataDevoluçaoReal +
+                ", dataDevolucaoReal=" + dataDevolucaoReal +
                 ", ativo=" + ativo +
                 '}';
     }

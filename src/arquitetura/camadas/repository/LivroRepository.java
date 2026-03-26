@@ -1,56 +1,65 @@
 package arquitetura.camadas.repository;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import arquitetura.camadas.model.Livro;
 
 public class LivroRepository {
-    ArrayList<Livro> listaLivro = new ArrayList<>();
+    static int contadorId = 1;
 
-    public Livro salvar(Livro livro) {
-        listaLivro.add(livro);
-        return null;
+    static HashMap<Integer, Livro> bancoLivros = new HashMap<>();
+
+    public void salvar(Livro livro) {
+        bancoLivros.put(contadorId, livro);
+        contadorId++;
     }
 
     public Livro buscarPorId(int id) {
-        for (Livro livro : listaLivro) {
-            if (livro.getId() == id) {
-                return livro;
+        return bancoLivros.get(id);
+    }
+
+    public ArrayList<Livro> buscarPorNome(String nome) {
+        ArrayList<Livro> resultados = new ArrayList<>();
+        String busca = nome.toLowerCase();
+
+        for (HashMap.Entry<Integer, Livro> entrada : bancoLivros.entrySet()) {
+            Livro livro = entrada.getValue();
+
+            if (livro.getNome().toLowerCase().contains(busca)) {
+                resultados.add(livro);
             }
         }
-        return null;
+        return resultados;
     }
 
-    public List<Livro> buscarPorNome(String nome) {
-        ArrayList<Livro> resultado = new ArrayList<>();
-        for (Livro livro : listaLivro) {
-            if (livro.getNome().equals(nome)) {
-                resultado.add(livro);
-            }
-        }
-        return resultado;
-    }
+    // Viabilizar alteração para retornar um ArrayList ao invés de void (como em
+    // quando retorna a lista resultados)
+    public void listarTodos() {
+        for (HashMap.Entry<Integer, Livro> entrada : bancoLivros.entrySet()) {
+            Integer chave = entrada.getKey();
+            Livro livro = entrada.getValue();
 
-    public List<Livro> listarTodos() {
-        return listaLivro;
-    }
-
-    public void atualizar(Livro livro) {
-        for (Livro l : listaLivro) {
-            if (l.getId() == livro.getId()) {
-                l.setNome(livro.getNome());
-                return;
-            }
+            System.out.println("ID: " + chave + " | Livro: " + livro);
         }
     }
 
-    public void deletar(int id) {
-        for (Livro livro : listaLivro) {
-            if (livro.getId() == id) {
-                listaLivro.remove(livro);
-                return;
-            }
+    // Mudar como esse método funciona
+    // Ou lembrar que quando for usar esse método chamar algum outro que crie outro
+    // livro para substituir esse.
+    public boolean atualizar(int id, Livro livro) {
+        if (bancoLivros.containsKey(id)) {
+            bancoLivros.replace(id, livro);
+            return true;
         }
+        return false;
+    }
+
+    public boolean deletar(int id) {
+        if (bancoLivros.containsKey(id)) {
+            bancoLivros.remove(id);
+            return true;
+        }
+        return false;
     }
 }

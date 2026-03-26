@@ -8,10 +8,6 @@ import arquitetura.camadas.service.LivroService;
 public class LivroController {
     private LivroService livroService;
 
-    public LivroController() {
-        this.livroService = new LivroService();
-    }
-
     public LivroController(LivroService livroService) {
         this.livroService = livroService;
     }

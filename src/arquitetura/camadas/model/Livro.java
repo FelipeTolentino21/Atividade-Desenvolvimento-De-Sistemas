@@ -7,15 +7,16 @@ public class Livro {
     private int edicao;
     private int quantidade;
 
-    public Livro() {
-    }
-
     public Livro(int id, String nome, String autor, int edicao, int quantidade) {
         this.id = id;
         this.nome = nome;
         this.autor = autor;
         this.edicao = edicao;
         this.quantidade = quantidade;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setId(int id) {
