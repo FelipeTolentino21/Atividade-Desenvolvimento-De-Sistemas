@@ -1,4 +1,10 @@
 # Sistema de Gerenciamento de Biblioteca - Arquitetura em Camadas
+## Integrantes
+- Felipe
+- Catharina
+- Lucas
+- Pedro
+
 
 ## 📚 Objetivo Educacional
 
